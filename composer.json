@@ -1,0 +1,27 @@
+{
+    "name": "site-cockpit/site-cockpit",
+    "description": "site-cockpit/site-cockpit",
+    "type": "shopware-platform-plugin",
+    "version": "0.9",
+    "license": "proprietary",
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "SiteCockpit\\SiteCockpit",
+        "label": {
+            "de-DE": "Site Cockpit",
+            "en-GB": "Site Cockpit"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "SiteCockpit\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SiteCockpit\\Tests\\": "tests/"
+        }
+    }
+}
