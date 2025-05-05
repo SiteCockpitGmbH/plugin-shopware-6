@@ -24,7 +24,7 @@ Shopware.Component.register('site-cockpit-view', {
             return this.repositoryFactory.create('domain_sitekey');
         },
 
-        // removes any domain containging headless
+        // removes any domain containing headless
 
         domainFilter() {
             const criteria = new Criteria(1,25);
@@ -39,7 +39,6 @@ Shopware.Component.register('site-cockpit-view', {
             )
             return criteria;
         },
-
     },
 
     methods: {
