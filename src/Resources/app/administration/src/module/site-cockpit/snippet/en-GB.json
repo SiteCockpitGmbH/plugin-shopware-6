@@ -1,9 +1,9 @@
 {
   "siteCockpit": {
     "general": {
-      "description": "Site Cockpit Configuration",
+      "description": "SiteCockpit Configuration",
       "save": "Save",
-      "title": "Site Cockpit",
+      "title": "SiteCockpit",
       "configurationTitle": "Configuration",
       "linkTitle": "www.sitecockpit.com",
       "linkAddress": "https://www.sitecockpit.com",

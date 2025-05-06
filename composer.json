@@ -1,17 +1,23 @@
 {
     "name": "site-cockpit/site-cockpit",
-    "description": "site-cockpit/site-cockpit",
+    "description": "SiteCockpit",
     "type": "shopware-platform-plugin",
     "version": "0.9",
     "license": "proprietary",
     "require": {
         "shopware/core": "~6.4.0"
     },
+    "authors": [
+        {
+            "name": "Solution 360 GmbH",
+            "role": "Manufacturer"
+        }
+    ],
     "extra": {
         "shopware-plugin-class": "SiteCockpit\\SiteCockpit",
         "label": {
-            "de-DE": "Site Cockpit",
-            "en-GB": "Site Cockpit"
+            "de-DE": "SiteCockpit",
+            "en-GB": "SiteCockpit"
         }
     },
     "autoload": {
