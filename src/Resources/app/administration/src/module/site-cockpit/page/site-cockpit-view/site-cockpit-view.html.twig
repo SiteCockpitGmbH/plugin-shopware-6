@@ -18,6 +18,7 @@
                             :criteria="domainFilter"
                             v-model:value="domainId"
                             @update:value="changeDomain"
+                            @change="changeDomain"
                     />
 
                     <sw-text-field v-model:value="sitekey"/>
