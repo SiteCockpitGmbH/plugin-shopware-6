@@ -7,8 +7,8 @@
       "configurationTitle": "Configuration",
       "linkTitle": "www.sitecockpit.com",
       "linkAddress": "https://www.sitecockpit.com",
-      "HelpLinkTitle": "Help and support",
-      "HelpLinkAddress": "https://www.sitecockpit.com"
+      "helpLinkTitle": "Help and support",
+      "helpLinkAddress": "https://www.sitecockpit.com"
     }
   }
 }
