@@ -2,7 +2,7 @@
 
 namespace SiteCockpit\Twig;
 
-use Shopware\Core\Framework\DataAbstractionLayer\EntityRepository;
+use Shopware\Core\Framework\DataAbstractionLayer\EntityRepositoryInterface;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
 use Shopware\Core\System\SalesChannel\SalesChannelContext;
@@ -11,9 +11,9 @@ use Twig\TwigFunction;
 
 class GetCodePerDomain extends AbstractExtension
 {
-    private EntityRepository $domainSiteKeyRepository;
+    private EntityRepositoryInterface $domainSiteKeyRepository;
 
-    public function __construct(EntityRepository $domainSiteKeyRepository)
+    public function __construct(EntityRepositoryInterface $domainSiteKeyRepository)
     {
         $this->domainSiteKeyRepository = $domainSiteKeyRepository;
     }
