@@ -1,6 +1,5 @@
 import './page/site-cockpit-view';
 
-
 Shopware.Module.register('site-cockpit', {
     type: 'plugin',
     name: 'SiteCockpit',
@@ -11,18 +10,18 @@ Shopware.Module.register('site-cockpit', {
         settings: {
             component: 'site-cockpit-view',
             path: 'settings',
-        }
+        },
     },
     settingsItem: [
         {
             group: 'plugins',
             to: 'site.cockpit.settings',
             icon: 'regular-universal-access',
-            label: 'Site-Cockpit'
-        }
+            label: 'Site-Cockpit',
+        },
     ],
     extensionEntryRoute: {
         extensionName: 'SiteCockpit',
-        route: 'site.cockpit.settings'
-    }
+        route: 'site.cockpit.settings',
+    },
 });

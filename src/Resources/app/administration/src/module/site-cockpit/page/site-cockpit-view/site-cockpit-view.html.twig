@@ -4,28 +4,25 @@
     </template>
 
     <template #content>
-
         <div class="sw-card-wrapper">
             <div class="sw-card">
                 <div class="sw-card__content">
-
                     <h1>Configuration</h1>
-
                     <sw-entity-single-select
-                            id="domain"
-                            label-property="url"
-                            entity="sales_channel_domain"
-                            :criteria="domainFilter"
-                            v-model:value="domainId"
-                            @update:value="changeDomain"
-                            @change="changeDomain"
+                        id="domain"
+                        label-property="url"
+                        entity="sales_channel_domain"
+                        :criteria="domainFilter"
+                        v-model:value="domainId"
+                        @update:value="changeDomain"
+                        @change="changeDomain"
                     />
-
                     <sw-text-field v-model:value="sitekey"/>
-
-                    <button class="sw-button sw-button--primary"
-                            :disabled="loading"
-                            @click="onSubmit">
+                    <button
+                        class="sw-button sw-button--primary"
+                        :disabled="loading"
+                        @click="onSubmit"
+                    >
                         Save
                     </button>
                 </div>

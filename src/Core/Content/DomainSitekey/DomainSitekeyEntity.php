@@ -5,19 +5,18 @@ namespace SiteCockpit\Core\Content\DomainSitekey;
 use Shopware\Core\Framework\DataAbstractionLayer\Entity;
 use Shopware\Core\Framework\DataAbstractionLayer\EntityIdTrait;
 
-
 class DomainSitekeyEntity extends Entity
 {
     use EntityIdTrait;
+
+    protected ?string $salesChannelDomainId;
+
+    protected ?string $sitekey;
 
     public function getEntityClass(): string
     {
         return DomainSitekeyEntity::class;
     }
-
-    protected ?string $salesChannelDomainId;
-
-    protected ?string $sitekey;
 
     public function getSalesChannelDomainId(): ?string // Changed return type
     {
@@ -38,5 +37,4 @@ class DomainSitekeyEntity extends Entity
     {
         $this->sitekey = $sitekey;
     }
-
 }
