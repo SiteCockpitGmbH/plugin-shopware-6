@@ -27,8 +27,6 @@ class DomainSitekeyDefinition extends EntityDefinition
             (new IdField('id', 'id'))->addFlags(new Required(), new PrimaryKey()),
             (new FkField('sales_channel_domain_id', 'domainID', SalesChannelDomainDefinition::class))->addFlags(new Required()),
             (new StringField('sitekey', 'sitekey'))->addFlags(new Required()),
-
-            new OneToOneAssociationField('sales_channel_domain_id', 'sales_channel_domain_id', 'id', SalesChannelDomainDefinition::class, false)
         ]);
     }
 }
