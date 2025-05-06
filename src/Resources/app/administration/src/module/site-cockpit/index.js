@@ -3,8 +3,8 @@ import './page/site-cockpit-view';
 Shopware.Module.register('site-cockpit', {
     type: 'plugin',
     name: 'SiteCockpit',
-    title: 'SiteCockpit',
-    description: 'SiteCockpit Settings',
+    title: 'siteCockpit.general.title',
+    description: 'siteCockpit.general.description',
     color: '#1798d8',
     routes: {
         settings: {
@@ -17,7 +17,7 @@ Shopware.Module.register('site-cockpit', {
             group: 'plugins',
             to: 'site.cockpit.settings',
             icon: 'regular-universal-access',
-            label: 'Site-Cockpit',
+            label: 'siteCockpit.general.title',
         },
     ],
     extensionEntryRoute: {

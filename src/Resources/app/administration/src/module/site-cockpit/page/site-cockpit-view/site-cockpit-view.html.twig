@@ -1,13 +1,13 @@
 <sw-page class="site-cockpit">
     <template #smart-bar-header>
-        <h2>Site-Cockpit</h2>
+        <h2> {{ $t('siteCockpit.general.title') }}</h2>
     </template>
 
     <template #content>
         <div class="sw-card-wrapper">
             <div class="sw-card">
                 <div class="sw-card__content">
-                    <h1>Configuration</h1>
+                    <h1> {{ $t('siteCockpit.general.configurationTitle') }}</h1>
                     <sw-entity-single-select
                         id="domain"
                         label-property="url"
@@ -23,9 +23,19 @@
                         :disabled="loading"
                         @click="onSubmit"
                     >
-                        Save
+                        {{ $t('siteCockpit.general.save') }}
                     </button>
+                    <div>
+                        <br>
+                        <a :href="$t('siteCockpit.general.linkAddress')">
+                             {{ $t('siteCockpit.general.linkTitle') }}
+                        </a>
+                        <a :href="$t('siteCockpit.general.HelpLinkAddress')">
+                            {{ $t('siteCockpit.general.HelpLinkTitle') }}
+                        </a>
+                    </div>
                 </div>
+
             </div>
         </div>
     </template>

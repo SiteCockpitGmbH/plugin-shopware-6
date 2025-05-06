@@ -1,0 +1,14 @@
+{
+  "siteCockpit": {
+    "general": {
+      "description": "Site Cockpit Configuration",
+      "save": "Save",
+      "title": "Site Cockpit",
+      "configurationTitle": "Configuration",
+      "linkTitle": "www.sitecockpit.com",
+      "linkAddress": "https://www.sitecockpit.com",
+      "HelpLinkTitle": "Help and support",
+      "HelpLinkAddress": "https://www.sitecockpit.com"
+    }
+  }
+}
