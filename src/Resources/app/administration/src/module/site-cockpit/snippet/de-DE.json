@@ -1,18 +1,18 @@
 {
-  "siteCockpit": {
-    "general": {
-      "description": "SiteCockpit Konfiguration",
-      "save": "Speichern",
-      "title": "easyVision von SiteCockpit",
-      "configurationTitle": "Konfiguration",
-      "linkTitle": "www.sitecockpit.com",
-      "linkAddress": "https://www.sitecockpit.com",
-      "helpLinkTitle": "Hilfe und Unterstützung",
-      "helpLinkAddress": "https://www.sitecockpit.com/de/support",
-      "labelDomain": "Domain",
-      "labelSiteKey": "Integrations-Key",
-      "siteKeyPlaceholder": "Bitte den Integrations-Key hinterlegen",
-      "helpText": "Wählen Sie zunächst die gewünschte Domain aus. Navigieren Sie anschließend im SiteCockpit-Backend zum Bereich <a href=\"https://test.sitecockpit.com/de/dashboard/widget\">'easyVision Widget'</a>. Wählen Sie hier die gleiche Domain aus und kopieren Sie den angezeigten Integrations-Key. Fügen Sie diesen Key in das zweite Eingabefeld ein. Speichern Sie abschließend, um die Konfiguration erfolgreich abzuschließen."
+    "siteCockpit": {
+        "general": {
+            "description": "SiteCockpit Konfiguration",
+            "save": "Speichern",
+            "title": "easyVision von SiteCockpit",
+            "configurationTitle": "Konfiguration",
+            "linkTitle": "www.sitecockpit.com",
+            "linkAddress": "https://www.sitecockpit.com",
+            "helpLinkTitle": "Hilfe und Unterstützung",
+            "helpLinkAddress": "https://www.sitecockpit.com/de/support",
+            "labelDomain": "Domain",
+            "labelSiteKey": "Integrations-Key",
+            "siteKeyPlaceholder": "Bitte den Integrations-Key hinterlegen",
+            "helpText": "Wählen Sie zunächst die gewünschte Domain aus. Navigieren Sie anschließend im SiteCockpit-Backend zum Bereich <a href=\"https://test.sitecockpit.com/de/dashboard/widget\">'easyVision Widget'</a>. Wählen Sie hier die gleiche Domain aus und kopieren Sie den angezeigten Integrations-Key. Fügen Sie diesen Key in das zweite Eingabefeld ein. Speichern Sie abschließend, um die Konfiguration erfolgreich abzuschließen."
+        }
     }
-  }
 }

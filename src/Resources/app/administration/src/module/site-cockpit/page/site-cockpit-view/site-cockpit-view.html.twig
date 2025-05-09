@@ -1,66 +1,56 @@
 <sw-page class="site-cockpit">
     <template #smart-bar-header>
-        <h2> {{ $t('siteCockpit.general.title') }}</h2>
+        <h2>
+            {{ $t('siteCockpit.general.title') }}
+        </h2>
     </template>
 
     <template #content>
         <div class="sw-card-wrapper">
             <div class="sw-card">
                 <div class="sw-card__content">
-                    <h1> {{ $t('siteCockpit.general.configurationTitle') }}</h1>
+                    <h1>
+                        {{ $t('siteCockpit.general.configurationTitle') }}
+                    </h1>
                     <sw-entity-single-select
-                            :label="$t('siteCockpit.general.labelDomain')"
-                            id="domain"
-                            label-property="url"
-                            entity="sales_channel_domain"
-                            :criteria="domainFilter"
-                            {% if VUE3 %}
-                                v-model:value="domainId"
-                            {% else %}
-                                v-model="domainId"
-                            {% endif %}
-                            {% if VUE3 %}
-                                @update:value="changeDomain"
-                            {% else %}
-                                @change="changeDomain"
-                            {% endif %}
+                        :label="$t('siteCockpit.general.labelDomain')"
+                        id="domain"
+                        label-property="url"
+                        entity="sales_channel_domain"
+                        :criteria="domainFilter"
+                        v-model:value="domainId"
+                        @update:value="changeDomain"
+                        @change="changeDomain"
                     />
                     <sw-text-field
-                            {% if VUE3 %}
-                                v-model:value="sitekey"
-                            {% else %}
-                                v-model="sitekey"
-                            {% endif %}
-                            :placeholder="$t('siteCockpit.general.siteKeyPlaceholder')"
-                            :label="$t('siteCockpit.general.labelSiteKey')"
+                        v-model:value="sitekey"
+                        :placeholder="$t('siteCockpit.general.siteKeyPlaceholder')"
+                        :label="$t('siteCockpit.general.labelSiteKey')"
                     />
-                    <div>
                     <sw-button
-                            class="sw-button sw-button--primary"
-                            :isLoading="loading"
-                            @click="onSubmit"
-                            variant="primary"
+                        class="sw-button sw-button--primary"
+                        :isLoading="loading"
+                        @click="onSubmit"
+                        variant="primary"
                     >
                         {{ $t('siteCockpit.general.save') }}
                     </sw-button>
-                    </div>
-                    <br>
-                    <br>
-                    <p v-html="$t('siteCockpit.general.helpText')">
-                    </p>
-                    <div>
-                        <br>
-                        <a :href="$t('siteCockpit.general.linkAddress')">
-                            {{ $t('siteCockpit.general.linkTitle') }}
-                        </a>
-                        <br>
-                        <br>
-                        <a :href="$t('siteCockpit.general.helpLinkAddress')">
-                            {{ $t('siteCockpit.general.helpLinkTitle') }}
-                        </a>
-                    </div>
                 </div>
-
+                <br/>
+                <br/>
+                <p v-html="$t('siteCockpit.general.helpText')">
+                </p>
+                <div>
+                    <br/>
+                    <a :href="$t('siteCockpit.general.linkAddress')">
+                        {{ $t('siteCockpit.general.linkTitle') }}
+                    </a>
+                    <br/>
+                    <br/>
+                    <a :href="$t('siteCockpit.general.helpLinkAddress')">
+                        {{ $t('siteCockpit.general.helpLinkTitle') }}
+                    </a>
+                </div>
             </div>
         </div>
     </template>
