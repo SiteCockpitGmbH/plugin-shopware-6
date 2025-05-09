@@ -10,7 +10,8 @@
       "helpLinkTitle": "Help and support",
       "helpLinkAddress": "https://www.sitecockpit.com",
       "labelDomain": "Domain",
-      "labelSiteKey": "SiteKey"
+      "labelSiteKey": "SiteKey",
+      "siteKeyPlaceholder": "PLease enter your sitekey"
     }
   }
 }

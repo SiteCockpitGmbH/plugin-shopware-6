@@ -31,6 +31,7 @@
                             {% else %}
                                 v-model="sitekey"
                             {% endif %}
+                            :placeholder="$t('siteCockpit.general.siteKeyPlaceholder')"
                             :label="$t('siteCockpit.general.labelSiteKey')"
                     />
                     <button

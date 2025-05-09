@@ -21,7 +21,7 @@ class Migration1746187664SiteCockpitKey extends MigrationStep
                     CREATE TABLE IF NOT EXISTS domain_sitekey (
                         id BINARY(16) NOT NULL,
                         sales_channel_domain_id BINARY(16) NOT NULL,
-                        sitekey VARCHAR(255) NOT NULL,
+                        sitekey VARCHAR(255),
                         created_at DATETIME(3) NOT NULL,
                         updated_at DATETIME(3) NULL,
                         PRIMARY KEY (id),
