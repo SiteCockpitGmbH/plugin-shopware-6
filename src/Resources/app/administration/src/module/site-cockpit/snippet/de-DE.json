@@ -3,12 +3,14 @@
     "general": {
       "description": "SiteCockpit Konfiguration",
       "save": "Speichern",
-      "title": "SiteCockpit",
+      "title": "easyVision von SiteCockpit",
       "configurationTitle": "Konfiguration",
       "linkTitle": "www.sitecockpit.com",
       "linkAddress": "https://www.sitecockpit.com",
       "helpLinkTitle": "Hilfe und Unterstützung",
-      "helpLinkAddress": "https://www.sitecockpit.com"
+      "helpLinkAddress": "https://www.sitecockpit.com",
+      "labelDomain": "Domain",
+      "labelSiteKey": "SiteKey"
     }
   }
 }
