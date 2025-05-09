@@ -1,5 +1,5 @@
-const {Criteria} = Shopware.Data;
-const {Mixin} = Shopware
+const { Criteria } = Shopware.Data;
+const { Mixin } = Shopware;
 
 import template from './site-cockpit-view.html.twig';
 
@@ -19,7 +19,7 @@ Shopware.Component.register('site-cockpit-view', {
     },
     computed: {
         salesChannelRepository() {
-            return this.repositoryFactory.create('sales_channel')
+            return this.repositoryFactory.create('sales_channel');
         },
         domainRepository() {
             return this.repositoryFactory.create('sales_channel_domain');
@@ -82,31 +82,34 @@ Shopware.Component.register('site-cockpit-view', {
 
             this.sitekeyObject.domainID = this.domainId;
 
-            this.siteKeyRepository
-                .save(this.sitekeyObject, Shopware.Context.api)
+            this.siteKeyRepository.save(
+                this.sitekeyObject,
+                Shopware.Context.api
+            );
         },
 
         async compileTheme() {
-            const criteria = new Criteria()
+            const criteria = new Criteria();
             criteria.addAssociation('themes');
-            criteria.addAssociation('domains')
-            criteria.addFilter(
-                Criteria.equals('domains.id', this.domainId
-                ))
+            criteria.addAssociation('domains');
+            criteria.addFilter(Criteria.equals('domains.id', this.domainId));
 
             let salesChannels = await this.salesChannelRepository.search(
                 criteria,
                 Shopware.Context.api
-            )
+            );
 
             for (let salesChannel of salesChannels) {
-                const theme = salesChannel.extensions.themes.first()
+                const theme = salesChannel.extensions.themes.first();
 
                 if (theme) {
-                    await this.themeService.assignTheme(theme.id, salesChannel.id)
+                    await this.themeService.assignTheme(
+                        theme.id,
+                        salesChannel.id
+                    );
                     this.createNotificationSuccess({
                         message: `${salesChannel.translated.name}: ${this.$t('siteCockpit.general.themeCompiled')}`,
-                    })
+                    });
                 }
             }
 
@@ -114,9 +117,7 @@ Shopware.Component.register('site-cockpit-view', {
 
             this.createNotificationSuccess({
                 message: this.$t('siteCockpit.general.settingsSaved'),
-            })
-
-
+            });
         },
 
         async createSitekey() {
