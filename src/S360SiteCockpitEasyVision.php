@@ -29,9 +29,7 @@ class S360SiteCockpitEasyVision extends Plugin
             $connection = $this->container->get(Connection::class);
 
             $connection->executeStatement('DROP TABLE IF EXISTS `domain_sitekey`');
-
         }
-
     }
 
     public function activate(ActivateContext $activateContext): void
