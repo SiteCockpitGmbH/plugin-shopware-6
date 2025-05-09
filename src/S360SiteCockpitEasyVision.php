@@ -1,7 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace SiteCockpit;
+namespace S360SiteCockpitEasyVision;
 
+use Doctrine\DBAL\Connection;
 use Shopware\Core\Framework\Plugin;
 use Shopware\Core\Framework\Plugin\Context\ActivateContext;
 use Shopware\Core\Framework\Plugin\Context\DeactivateContext;
@@ -9,7 +10,7 @@ use Shopware\Core\Framework\Plugin\Context\InstallContext;
 use Shopware\Core\Framework\Plugin\Context\UninstallContext;
 use Shopware\Core\Framework\Plugin\Context\UpdateContext;
 
-class SiteCockpit extends Plugin
+class S360SiteCockpitEasyVision extends Plugin
 {
     public function install(InstallContext $installContext): void
     {
@@ -24,7 +25,9 @@ class SiteCockpit extends Plugin
             return;
         }
 
-        // Remove or deactivate the data created by the plugin
+        $connection = $this->container->get(Connection::class);
+
+        $connection->executeStatement('DROP TABLE IF EXISTS `domain_sitekey`');
     }
 
     public function activate(ActivateContext $activateContext): void

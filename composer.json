@@ -1,33 +1,37 @@
 {
-    "name": "site-cockpit/site-cockpit",
-    "description": "SiteCockpit",
+    "name": "s360/site-cockpit-easy-vision",
+    "description": "easyVision von SiteCockpit - Barrierefreiheit für deinen Shop",
     "type": "shopware-platform-plugin",
     "version": "0.9",
     "license": "proprietary",
     "require": {
-        "shopware/core": "~6.4.0"
+        "shopware/core": "~6.6.0 || ~6.5.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "S360SiteCockpitEasyVision\\S360SiteCockpitEasyVision",
+        "label": {
+            "de-DE": "easyVision von SiteCockpit - Barrierefreiheit für deinen Shop",
+            "en-GB": "easyVision from SiteCockpit - Accessibility for your shop"
+        },
+        "description": {
+            "de-DE": "Mit easyVision von SiteCockpit optimieren Sie die Barrierefreiheit Ihres Shops. Besucher steuern Kontrast, Schrift und Lesemodi. In 5 Minuten startklar – jetzt handeln!",
+            "en-GB": "With easyVision from SiteCockpit, you optimize the accessibility of your shop. Visitors control contrast, font, and reading modes. Ready to go in 5 minutes – act now!"
+        }
     },
     "authors": [
         {
             "name": "Solution 360 GmbH",
-            "role": "Manufacturer"
+            "homepage" : "https://www.solution360.de/"
         }
     ],
-    "extra": {
-        "shopware-plugin-class": "SiteCockpit\\SiteCockpit",
-        "label": {
-            "de-DE": "SiteCockpit",
-            "en-GB": "SiteCockpit"
-        }
-    },
     "autoload": {
         "psr-4": {
-            "SiteCockpit\\": "src/"
+            "S360SiteCockpitEasyVision\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SiteCockpit\\Tests\\": "tests/"
+            "S360SiteCockpitEasyVision\\Tests\\": "tests/"
         }
     }
 }

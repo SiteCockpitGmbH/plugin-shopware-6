@@ -2,7 +2,7 @@ import './page/site-cockpit-view';
 
 Shopware.Module.register('site-cockpit', {
     type: 'plugin',
-    name: 'SiteCockpit',
+    name: 'S360SiteCockpitEasyVision',
     title: 'siteCockpit.general.title',
     description: 'siteCockpit.general.description',
     color: '#1798d8',
@@ -21,7 +21,7 @@ Shopware.Module.register('site-cockpit', {
         },
     ],
     extensionEntryRoute: {
-        extensionName: 'SiteCockpit',
+        extensionName: 'S360SiteCockpitEasyVision',
         route: 'site.cockpit.settings',
     },
 });

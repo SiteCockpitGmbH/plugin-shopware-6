@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace SiteCockpit\Core\Content\DomainSitekey;
+namespace S360SiteCockpitEasyVision\Core\Content\DomainSitekey;
 
 use Shopware\Core\Framework\DataAbstractionLayer\EntityDefinition;
 use Shopware\Core\Framework\DataAbstractionLayer\Field\FkField;
@@ -25,7 +25,7 @@ class DomainSitekeyDefinition extends EntityDefinition
         return new FieldCollection([
             (new IdField('id', 'id'))->addFlags(new Required(), new PrimaryKey()),
             (new FkField('sales_channel_domain_id', 'domainID', SalesChannelDomainDefinition::class))->addFlags(new Required()),
-            (new StringField('sitekey', 'sitekey'))->addFlags(new Required()),
+            new StringField('sitekey', 'sitekey'),
         ]);
     }
 }

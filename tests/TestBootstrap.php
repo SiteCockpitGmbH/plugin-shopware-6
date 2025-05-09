@@ -4,9 +4,9 @@ use Shopware\Core\TestBootstrapper;
 
 $loader = (new TestBootstrapper())
     ->addCallingPlugin()
-    ->addActivePlugins('SiteCockpit')
+    ->addActivePlugins('S360SiteCockpitEasyVision')
     ->setForceInstallPlugins(true)
     ->bootstrap()
     ->getClassLoader();
 
-$loader->addPsr4('SiteCockpit\\Tests\\', __DIR__);
+$loader->addPsr4('S360SiteCockpitEasyVision\\Tests\\', __DIR__);
