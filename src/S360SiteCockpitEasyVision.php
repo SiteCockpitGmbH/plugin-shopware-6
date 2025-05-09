@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace SiteCockpit;
+namespace S360SiteCockpitEasyVision;
 
 use Shopware\Core\Framework\Plugin;
 use Shopware\Core\Framework\Plugin\Context\ActivateContext;
@@ -9,7 +9,7 @@ use Shopware\Core\Framework\Plugin\Context\InstallContext;
 use Shopware\Core\Framework\Plugin\Context\UninstallContext;
 use Shopware\Core\Framework\Plugin\Context\UpdateContext;
 
-class SiteCockpit extends Plugin
+class S360SiteCockpitEasyVision extends Plugin
 {
     public function install(InstallContext $installContext): void
     {

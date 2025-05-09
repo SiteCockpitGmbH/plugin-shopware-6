@@ -5,10 +5,10 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="SiteCockpit\Core\Content\DomainSitekey\DomainSitekeyDefinition">
+        <service id="S360SiteCockpitEasyVision\Core\Content\DomainSitekey\DomainSitekeyDefinition">
             <tag name="shopware.entity.definition" entity="domain_sitekey" />
         </service>
-        <service id="SiteCockpit\Twig\GetCodePerDomain" public="true">
+        <service id="S360SiteCockpitEasyVision\Twig\GetCodePerDomain" public="true">
             <tag name="twig.extension"/>
             <argument type="service" id="domain_sitekey.repository"/>
         </service>
