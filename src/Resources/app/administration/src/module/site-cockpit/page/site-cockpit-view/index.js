@@ -1,10 +1,12 @@
-const { Criteria } = Shopware.Data;
+const {Criteria} = Shopware.Data;
+const {Mixin} = Shopware
 
 import template from './site-cockpit-view.html.twig';
 
 Shopware.Component.register('site-cockpit-view', {
     template,
-    inject: ['repositoryFactory'],
+    inject: ['repositoryFactory', 'themeService'],
+    mixins: [Mixin.getByName('notification')],
 
     data() {
         return {
@@ -16,6 +18,9 @@ Shopware.Component.register('site-cockpit-view', {
         };
     },
     computed: {
+        salesChannelRepository() {
+            return this.repositoryFactory.create('sales_channel')
+        },
         domainRepository() {
             return this.repositoryFactory.create('sales_channel_domain');
         },
@@ -66,10 +71,11 @@ Shopware.Component.register('site-cockpit-view', {
         },
         onSubmit() {
             if (this.sitekeyId) {
-                this.updateSitekey();
-            } else this.createSitekey();
+                this.updateSitekey().then(() => this.compileTheme());
+            } else this.createSitekey().then(() => this.compileTheme());
         },
-        updateSitekey() {
+
+        async updateSitekey() {
             this.loading = true;
 
             this.sitekeyObject.sitekey = this.sitekey;
@@ -78,11 +84,42 @@ Shopware.Component.register('site-cockpit-view', {
 
             this.siteKeyRepository
                 .save(this.sitekeyObject, Shopware.Context.api)
-                .then(() => {
-                    this.loading = false;
-                });
         },
-        createSitekey() {
+
+        async compileTheme() {
+            const criteria = new Criteria()
+            criteria.addAssociation('themes');
+            criteria.addAssociation('domains')
+            criteria.addFilter(
+                Criteria.equals('domains.id', this.domainId
+                ))
+
+            let salesChannels = await this.salesChannelRepository.search(
+                criteria,
+                Shopware.Context.api
+            )
+
+            for (let salesChannel of salesChannels) {
+                const theme = salesChannel.extensions.themes.first()
+
+                if (theme) {
+                    await this.themeService.assignTheme(theme.id, salesChannel.id)
+                    this.createNotificationSuccess({
+                        message: `${salesChannel.translated.name}: ${this.$t('siteCockpit.general.themeCompiled')}`,
+                    })
+                }
+            }
+
+            this.loading = false;
+
+            this.createNotificationSuccess({
+                message: this.$t('siteCockpit.general.settingsSaved'),
+            })
+
+
+        },
+
+        async createSitekey() {
             this.loading = true;
 
             this.sitekeyObject = this.siteKeyRepository.create(
@@ -97,7 +134,6 @@ Shopware.Component.register('site-cockpit-view', {
                 .save(this.sitekeyObject, Shopware.Context.api)
                 .then(() => {
                     this.getSitekey();
-                    this.loading = false;
                 });
         },
     },
