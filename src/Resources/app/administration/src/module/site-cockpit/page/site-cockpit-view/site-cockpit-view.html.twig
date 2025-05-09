@@ -34,18 +34,27 @@
                             :placeholder="$t('siteCockpit.general.siteKeyPlaceholder')"
                             :label="$t('siteCockpit.general.labelSiteKey')"
                     />
-                    <button
+                    <div>
+                    <sw-button
                             class="sw-button sw-button--primary"
-                            :disabled="loading"
+                            :isLoading="loading"
                             @click="onSubmit"
+                            variant="primary"
                     >
                         {{ $t('siteCockpit.general.save') }}
-                    </button>
+                    </sw-button>
+                    </div>
+                    <br>
+                    <br>
+                    <p v-html="$t('siteCockpit.general.helpText')">
+                    </p>
                     <div>
                         <br>
                         <a :href="$t('siteCockpit.general.linkAddress')">
                             {{ $t('siteCockpit.general.linkTitle') }}
                         </a>
+                        <br>
+                        <br>
                         <a :href="$t('siteCockpit.general.helpLinkAddress')">
                             {{ $t('siteCockpit.general.helpLinkTitle') }}
                         </a>
