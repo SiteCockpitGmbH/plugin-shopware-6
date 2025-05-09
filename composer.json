@@ -1,5 +1,5 @@
 {
-    "name": "easy-cockpit/site-cockpit",
+    "name": "site-cockpit/site-cockpit",
     "description": "asyVision von SiteCockpit - Barrierefreiheit für deinen Shop",
     "type": "shopware-platform-plugin",
     "version": "0.9",
