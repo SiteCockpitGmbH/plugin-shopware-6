@@ -2,7 +2,7 @@
     "name": "s360/site-cockpit-easy-vision",
     "description": "easyVision von SiteCockpit - Barrierefreiheit für deinen Shop",
     "type": "shopware-platform-plugin",
-    "version": "0.9",
+    "version": "1.0.0",
     "license": "proprietary",
     "require": {
         "shopware/core": "~6.4.0"

@@ -12,6 +12,8 @@
             "labelDomain": "Domain",
             "labelSiteKey": "integration key",
             "siteKeyPlaceholder": "Please enter your integration key.",
+            "themeCompiled": "compiled",
+            "settingsSaved": "Settings saved",
             "helpText": "First, select the desired domain. Then navigate to the <a href=\"https://test.sitecockpit.com/en/dashboard/widget\">'easyVision Widget'</a> section in the SiteCockpit backend. Select the same domain here and copy the displayed integration key. Insert this key into the second input field. Finally, save to complete the configuration successfully."
         }
     }
