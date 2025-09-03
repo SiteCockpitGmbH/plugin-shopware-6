@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace S360SiteCockpitEasyVision\Twig;
+namespace SiteCockpitEasyVisionShopware6\Twig;
 
 use Shopware\Core\Framework\DataAbstractionLayer\EntityRepositoryInterface;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;

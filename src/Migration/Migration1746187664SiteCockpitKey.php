@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace S360SiteCockpitEasyVision\Migration;
+namespace SiteCockpitEasyVisionShopware6\Migration;
 
 use Doctrine\DBAL\Connection;
 use Shopware\Core\Framework\Migration\MigrationStep;
