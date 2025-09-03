@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace S360SiteCockpitEasyVision\Core\Content\DomainSitekey;
+namespace SiteCockpitEasyVisionShopware6\Core\Content\DomainSitekey;
 
 use Shopware\Core\Framework\DataAbstractionLayer\EntityDefinition;
 use Shopware\Core\Framework\DataAbstractionLayer\Field\FkField;

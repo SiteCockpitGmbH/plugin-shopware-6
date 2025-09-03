@@ -1,14 +1,14 @@
 {
-    "name": "s360/site-cockpit-easy-vision",
+    "name": "sitecockpit/easy-vision-shopware6",
     "description": "easyVision von SiteCockpit - Barrierefreiheit für deinen Shop",
     "type": "shopware-platform-plugin",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "license": "proprietary",
     "require": {
-        "shopware/core": "~6.6.0 || ~6.5.0"
+        "shopware/core": "~6.5.0"
     },
     "extra": {
-        "shopware-plugin-class": "S360SiteCockpitEasyVision\\S360SiteCockpitEasyVision",
+        "shopware-plugin-class": "SiteCockpitEasyVisionShopware6\\SiteCockpitEasyVisionShopware6",
         "label": {
             "de-DE": "easyVision von SiteCockpit - Barrierefreiheit für deinen Shop",
             "en-GB": "easyVision from SiteCockpit - Accessibility for your shop"
@@ -26,12 +26,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "S360SiteCockpitEasyVision\\": "src/"
+            "SiteCockpitEasyVisionShopware6\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "S360SiteCockpitEasyVision\\Tests\\": "tests/"
+            "SiteCockpitEasyVisionShopware6\\Tests\\": "tests/"
         }
     }
 }
