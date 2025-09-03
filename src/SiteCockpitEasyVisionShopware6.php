@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace S360SiteCockpitEasyVision;
+namespace SiteCockpitEasyVisionShopware6;
 
 use Doctrine\DBAL\Connection;
 use Shopware\Core\Framework\Plugin;
@@ -10,7 +10,7 @@ use Shopware\Core\Framework\Plugin\Context\InstallContext;
 use Shopware\Core\Framework\Plugin\Context\UninstallContext;
 use Shopware\Core\Framework\Plugin\Context\UpdateContext;
 
-class S360SiteCockpitEasyVision extends Plugin
+class SiteCockpitEasyVisionShopware6 extends Plugin
 {
     public function install(InstallContext $installContext): void
     {
