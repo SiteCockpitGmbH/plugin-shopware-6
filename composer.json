@@ -1,37 +1,32 @@
 {
-    "name": "sitecockpit/easy-vision-shopware6",
-    "description": "easyVision von SiteCockpit - Barrierefreiheit für deinen Shop",
-    "type": "shopware-platform-plugin",
-    "version": "2.0.0",
-    "license": "proprietary",
-    "require": {
-        "shopware/core": "~6.5.0"
+  "name": "sitecockpit/easy-vision-shopware6",
+  "description": "easyVision von SiteCockpit - Barrierefreiheit für Ihren Shop",
+  "type": "shopware-platform-plugin",
+  "version": "2.1.0",
+  "license": "proprietary",
+  "require": {
+    "shopware/core": "~6.5.0"
+  },
+  "extra": {
+    "shopware-plugin-class": "SiteCockpitEasyVisionShopware6\\SiteCockpitEasyVisionShopware6",
+    "label": {
+      "de-DE": "easyVision von SiteCockpit - Barrierefreiheit für Ihren Shop",
+      "en-GB": "easyVision by SiteCockpit - Accessibility for your shop"
     },
-    "extra": {
-        "shopware-plugin-class": "SiteCockpitEasyVisionShopware6\\SiteCockpitEasyVisionShopware6",
-        "label": {
-            "de-DE": "easyVision von SiteCockpit - Barrierefreiheit für deinen Shop",
-            "en-GB": "easyVision from SiteCockpit - Accessibility for your shop"
-        },
-        "description": {
-            "de-DE": "Mit easyVision von SiteCockpit optimieren Sie die Barrierefreiheit Ihres Shops. Besucher steuern Kontrast, Schrift und Lesemodi. In 5 Minuten startklar – jetzt handeln!",
-            "en-GB": "With easyVision from SiteCockpit, you optimize the accessibility of your shop. Visitors control contrast, font, and reading modes. Ready to go in 5 minutes – act now!"
-        }
-    },
-    "authors": [
-        {
-            "name": "Solution 360 GmbH",
-            "homepage" : "https://www.solution360.de/"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "SiteCockpitEasyVisionShopware6\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "SiteCockpitEasyVisionShopware6\\Tests\\": "tests/"
-        }
+    "description": {
+      "de-DE": "Mit easyVision von SiteCockpit optimieren Sie die Barrierefreiheit Ihres Shops. Besucher steuern Kontrast, Schrift und Lesemodi. In 5 Minuten startklar – jetzt handeln!",
+      "en-GB": "With easyVision by SiteCockpit, you optimize the accessibility of your shop. Visitors control contrast, font, and reading modes. Ready to go in 5 minutes – act now!"
     }
+  },
+  "authors": [
+    {
+      "name": "Solution 360 GmbH",
+      "homepage" : "https://www.solution360.de/"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SiteCockpitEasyVisionShopware6\\": "src/"
+    }
+  }
 }

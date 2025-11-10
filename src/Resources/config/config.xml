@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>SiteCockpit easyVision Configuration</title>
+        <title lang="de-DE">SiteCockpit easyVision Konfiguration</title>
+        <input-field>
+            <name>easyvisionIntegrationKey</name>
+            <label>Integration Key</label>
+            <label lang="de-DE">Integrations-Key</label>
+            <helpText>Navigate to the easyVision Widget section in the SiteCockpit backend. Select the domain and copy the displayed integration key. Be sure to use the correct integration key for each sales channel if you're using multiple domains.</helpText>
+            <helpText lang="de-DE">Navigieren Sie im SiteCockpit-Backend zum Abschnitt easyVision Widget. Wählen Sie die Domain aus und kopieren Sie den angezeigten Integrations-Key. Achten Sie darauf, den korrekten Integrations-Key für jeden Sales Channel zu verwenden, falls Sie mehrere Domains nutzen.</helpText>
+        </input-field>
+    </card>
+</config>
