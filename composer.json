@@ -11,11 +11,11 @@
         "shopware-plugin-class": "SiteCockpitEasyVisionShopware6\\SiteCockpitEasyVisionShopware6",
         "label": {
             "de-DE": "easyVision von SiteCockpit - Barrierefreiheit für Ihren Shop",
-            "en-GB": "easyVision from SiteCockpit - Accessibility for your shop"
+            "en-GB": "easyVision by SiteCockpit - Accessibility for your shop"
         },
         "description": {
             "de-DE": "Mit easyVision von SiteCockpit optimieren Sie die Barrierefreiheit Ihres Shops. Besucher steuern Kontrast, Schrift und Lesemodi. In 5 Minuten startklar – jetzt handeln!",
-            "en-GB": "With easyVision from SiteCockpit, you optimize the accessibility of your shop. Visitors control contrast, font, and reading modes. Ready to go in 5 minutes – act now!"
+            "en-GB": "With easyVision by SiteCockpit, you optimize the accessibility of your shop. Visitors control contrast, font, and reading modes. Ready to go in 5 minutes – act now!"
         }
     },
     "authors": [
