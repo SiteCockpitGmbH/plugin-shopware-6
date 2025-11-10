@@ -2,8 +2,8 @@
 {% block base_body_script %}
     {{ parent() }}
 
-    {% set key = getCodePerDomain(context.domainId, context) %}
-    {% if key %}
-        <script type="module" src="https://cdn.sitecockpit.com/cdn/app.js" data-easy-vision-key="{{ key }}"></script>
+    {% set easyvisionIntegrationKey = config('SiteCockpitEasyVisionShopware6.config.easyvisionIntegrationKey') %}
+    {% if easyvisionIntegrationKey %}
+        <script type="module" src="https://cdn.sitecockpit.com/cdn/app.js" data-easy-vision-key="{{ easyvisionIntegrationKey }}"></script>
     {% endif %}
 {% endblock %}
